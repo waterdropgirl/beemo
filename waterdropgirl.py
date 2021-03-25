@@ -10,10 +10,6 @@ async def hello(self, ctx):
 	await ctx.send("Hi I'm beemo, how are you doing?")
 
 @commands.command()
-async def goodbye(self, ctx, user: discord.Member):
-	await ctx.send(f"Talk to you later {user.mention}(:")
-
-@commands.command()
 async def randomtest(self, ctx, user: discord.Member):
 	base_msg = ["Hello,", "Hi,", "Hey there,"]
 	mid_msg = ["is currently not available right now.", "is out and about and will not be able to reply.", "cannot respond to you at the moment."]
